@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Activo_Xmlsitemap",
+    "type": "magento-module",
+    "license": "Commercial",
+    "homepage": "",
+    "description": "Updates core Google Sitemap XML generator to use the correct <lastmod> dates. This makes the whole XML Sitemap more usable by search engines.",
+    "authors": [
+    {
+        "name": "Activo Extensions",
+        "email": "extensions@activo.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

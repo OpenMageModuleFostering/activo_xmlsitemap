@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Activo_Xmlsitemap>
+            <version>0.1.0</version>
+        </Activo_Xmlsitemap>
+    </modules>
+    <global>
+        <helpers>
+            <xmlsitemap>
+                <class>Activo_Xmlsitemap_Helper</class>
+            </xmlsitemap>
+        </helpers>
+        <models>
+            <xmlsitemap>
+                <class>Activo_Xmlsitemap_Model</class>
+                <resourceModel>xmlsitemap_resource</resourceModel>
+            </xmlsitemap>
+            <sitemap>
+                <rewrite>
+                    <sitemap>Activo_Xmlsitemap_Model_Sitemap_Sitemap</sitemap>
+                </rewrite>
+            </sitemap>
+            <sitemap_resource>
+                <rewrite>
+                    <catalog_product>Activo_Xmlsitemap_Model_Sitemap_Resource_Catalog_Product</catalog_product>
+                </rewrite>
+                <rewrite>
+                    <catalog_category>Activo_Xmlsitemap_Model_Sitemap_Resource_Catalog_Category</catalog_category>
+                </rewrite>
+                <rewrite>
+                    <cms_page>Activo_Xmlsitemap_Model_Sitemap_Resource_Cms_Page</cms_page>
+                </rewrite>
+            </sitemap_resource>
+        </models>
+    </global>
+</config> 
