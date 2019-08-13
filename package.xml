@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>Activo_Xmlsitemap</name>
-    <version>0.1.0</version>
+    <version>0.5.0</version>
     <stability>stable</stability>
     <license uri="http://extensions.activo.com/license_professional">Commercial</license>
     <channel>community</channel>
     <extends/>
     <summary>Updates core Google Sitemap XML generator to use the correct &lt;lastmod&gt; dates. This makes the whole XML Sitemap more usable by search engines.</summary>
     <description>Updates core Google Sitemap XML generator to use the correct &lt;lastmod&gt; dates. This makes the whole XML Sitemap more usable by search engines.</description>
-    <notes>Initial release with correct &lt;lastmod&gt; dates.</notes>
+    <notes>Added support to older Magento versions, including Magento 1.5.x.x.</notes>
     <authors><author><name>Activo Extensions</name><user>activo</user><email>extensions@activo.com</email></author></authors>
-    <date>2013-01-06</date>
-    <time>07:18:46</time>
-    <contents><target name="magecommunity"><dir name="Activo"><dir name="Xmlsitemap"><dir><dir name="Helper"><file name="Data.php" hash="7e9a738bbd9ee44ae6b4231b9f625a41"/></dir><dir name="Model"><dir name="Sitemap"><dir name="Resource"><dir name="Catalog"><file name="Category.php" hash="41b7efe21c8a8be7a3b08218a49d7a79"/><file name="Product.php" hash="9da077cb52bc186c11076b9464958b94"/></dir><dir name="Cms"><file name="Page.php" hash="333c87e0ba89c95e18ac90c931371c71"/></dir></dir><file name="Sitemap.php" hash="0a2f094cbe15056326ef530d695acec6"/></dir></dir><dir name="etc"><file name="config.xml" hash="681af8b0a6d79c2a626e0dcd4e602d92"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Activo_Xmlsitemap.xml" hash="c4b0fec6721e50db1c4664b51be42a34"/></dir></target></contents>
+    <date>2013-03-27</date>
+    <time>18:56:07</time>
+    <contents><target name="magecommunity"><dir name="Activo"><dir name="Xmlsitemap"><dir><dir name="Helper"><file name="Data.php" hash="7e9a738bbd9ee44ae6b4231b9f625a41"/></dir><dir name="Model"><dir name="Sitemap"><dir name="Mysql4"><dir name="Catalog"><file name="Category.php" hash="ff51e0f3c73ad3f49d7f2782ee87d8ef"/><file name="Product.php" hash="6f733786f8bdb588abf2bc458ed16f17"/></dir><dir name="Cms"><file name="Page.php" hash="ff7d48656992bbf15d170ce90cc32629"/></dir></dir><dir name="Resource"><dir name="Catalog"><file name="Category.php" hash="41b7efe21c8a8be7a3b08218a49d7a79"/><file name="Product.php" hash="9da077cb52bc186c11076b9464958b94"/></dir><dir name="Cms"><file name="Page.php" hash="333c87e0ba89c95e18ac90c931371c71"/></dir></dir><file name="Sitemap.php" hash="0a2f094cbe15056326ef530d695acec6"/></dir></dir><dir name="etc"><file name="config.xml" hash="84bf835aad9e9f98ca87c00dcb1aed35"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Activo_Xmlsitemap.xml" hash=""/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>8.0.0</max></php></required></dependencies>
 </package>

@@ -32,6 +32,18 @@
                     <cms_page>Activo_Xmlsitemap_Model_Sitemap_Resource_Cms_Page</cms_page>
                 </rewrite>
             </sitemap_resource>
+            
+            <sitemap_mysql4>
+                <rewrite>
+                    <catalog_product>Activo_Xmlsitemap_Model_Sitemap_Mysql4_Catalog_Product</catalog_product>
+                </rewrite>
+                <rewrite>
+                    <catalog_category>Activo_Xmlsitemap_Model_Sitemap_Mysql4_Catalog_Category</catalog_category>
+                </rewrite>
+                <rewrite>
+                    <cms_page>Activo_Xmlsitemap_Model_Sitemap_Mysql4_Cms_Page</cms_page>
+                </rewrite>
+            </sitemap_mysql4>
         </models>
     </global>
 </config> 
