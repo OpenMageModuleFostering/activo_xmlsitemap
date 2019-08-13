@@ -8,7 +8,7 @@
  * that is available through the world-wide-web at this URL:
  * http://extensions.activo.com/license_professional
  *
- * @copyright   Copyright (c) 2013 Activo Extensions (http://extensions.activo.com)
+ * @copyright   Copyright (c) 2014 Activo Extensions (http://extensions.activo.com)
  * @license     OSL 3.0
  */
 

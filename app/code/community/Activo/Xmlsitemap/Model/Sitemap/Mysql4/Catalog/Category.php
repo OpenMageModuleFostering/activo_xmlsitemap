@@ -1,4 +1,17 @@
 <?php
+/**
+ * Activo Extensions
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Activo Commercial License
+ * that is available through the world-wide-web at this URL:
+ * http://extensions.activo.com/license_professional
+ *
+ * @copyright   Copyright (c) 2014 Activo Extensions (http://extensions.activo.com)
+ * @license     OSL 3.0
+ */
+
 class Activo_Xmlsitemap_Model_Sitemap_Mysql4_Catalog_Category extends Mage_Sitemap_Model_Mysql4_Catalog_Category
 {
     /**
@@ -28,19 +41,19 @@ class Activo_Xmlsitemap_Model_Sitemap_Mysql4_Catalog_Category extends Mage_Sitem
         }
 
         $urConditions = array(
-            'e.entity_id=ur.category_id',
+            'main_table.entity_id=ur.category_id',
             $this->_getWriteAdapter()->quoteInto('ur.store_id=?', $store->getId()),
             'ur.product_id IS NULL',
             $this->_getWriteAdapter()->quoteInto('ur.is_system=?', 1),
         );
         $this->_select = $this->_getWriteAdapter()->select()
-            ->from(array('e' => $this->getMainTable()), array($this->getIdFieldName(), 'created_at', 'updated_at'))
+            ->from(array('main_table' => $this->getMainTable()), array($this->getIdFieldName(), 'created_at', 'updated_at'))
             ->joinLeft(
                 array('ur' => $this->getTable('core/url_rewrite')),
                 join(' AND ', $urConditions),
                 array('url'=>'request_path')
             )
-            ->where('e.path LIKE ?', $categoryRow['path'] . '/%');
+            ->where('main_table.path LIKE ?', $categoryRow['path'] . '/%');
 
         $this->_addFilter($storeId, 'is_active', 1);
 

@@ -1,4 +1,17 @@
 <?php
+/**
+ * Activo Extensions
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Activo Commercial License
+ * that is available through the world-wide-web at this URL:
+ * http://extensions.activo.com/license_professional
+ *
+ * @copyright   Copyright (c) 2014 Activo Extensions (http://extensions.activo.com)
+ * @license     OSL 3.0
+ */
+
 class Activo_Xmlsitemap_Model_Sitemap_Resource_Catalog_Product extends Mage_Sitemap_Model_Resource_Catalog_Product
 {
     /**
@@ -19,16 +32,16 @@ class Activo_Xmlsitemap_Model_Sitemap_Resource_Catalog_Product extends Mage_Site
         }
 
         $urCondions = array(
-            'e.entity_id=ur.product_id',
+            'main_table.entity_id=ur.product_id',
             'ur.category_id IS NULL',
             $this->_getWriteAdapter()->quoteInto('ur.store_id=?', $store->getId()),
             $this->_getWriteAdapter()->quoteInto('ur.is_system=?', 1),
         );
         $this->_select = $this->_getWriteAdapter()->select()
-            ->from(array('e' => $this->getMainTable()), array($this->getIdFieldName(), 'created_at', 'updated_at'))
+            ->from(array('main_table' => $this->getMainTable()), array($this->getIdFieldName(), 'created_at', 'updated_at'))
             ->join(
                 array('w' => $this->getTable('catalog/product_website')),
-                'e.entity_id=w.product_id',
+                'main_table.entity_id=w.product_id',
                 array()
             )
             ->where('w.website_id=?', $store->getWebsiteId())
