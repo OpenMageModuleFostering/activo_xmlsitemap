@@ -2,9 +2,8 @@
 <config>
     <modules>
         <Activo_Xmlsitemap>
-            <active>false</active>
+            <active>true</active>
             <codePool>community</codePool>
-            <version>0.1.0</version>
         </Activo_Xmlsitemap>
     </modules>
 </config>
