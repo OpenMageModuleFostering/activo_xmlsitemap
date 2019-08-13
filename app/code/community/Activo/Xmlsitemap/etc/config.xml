@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Activo_Xmlsitemap>
-            <version>0.1.0</version>
+            <version>1.0.0</version>
         </Activo_Xmlsitemap>
     </modules>
     <global>
@@ -46,4 +46,18 @@
             </sitemap_mysql4>
         </models>
     </global>
+    
+    <adminhtml>
+        <events>
+            <controller_action_predispatch>
+                <observers>
+                    <activo_news_xml>
+                        <type>singleton</type>
+                        <class>xmlsitemap/feed</class>
+                        <method>observe</method>
+                    </activo_news_xml>
+                </observers>
+            </controller_action_predispatch>
+        </events>
+    </adminhtml>
 </config> 

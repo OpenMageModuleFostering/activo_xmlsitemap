@@ -1,9 +1,9 @@
 {
     "name": "OpenMageModuleFostering/Activo_Xmlsitemap",
     "type": "magento-module",
-    "license": "Commercial",
+    "license": "OSL-v3.0",
     "homepage": "",
-    "description": "Updates core Google Sitemap XML generator to use the correct <lastmod> dates. This makes the whole XML Sitemap more usable by search engines.",
+    "description": "Generate a better XML Sitemap and improve your site's SEO.",
     "authors": [
     {
         "name": "Activo Extensions",
