@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Activo_Xmlsitemap",
+    "name": "OpenMageModuleFostering\/Activo_Xmlsitemap",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "Generate a better XML Sitemap and improve your site's SEO.",
     "authors": [
-    {
-        "name": "Activo Extensions",
-        "email": "extensions@activo.com"
-    }
-],
+        {
+            "name": "Activo Extensions",
+            "email": "extensions@activo.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
